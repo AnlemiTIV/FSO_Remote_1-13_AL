@@ -1,0 +1,1 @@
+# lisää FSO Osa 1 tehtävät tämän kansion sisään

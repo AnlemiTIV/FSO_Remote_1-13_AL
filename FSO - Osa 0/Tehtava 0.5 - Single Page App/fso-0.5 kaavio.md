@@ -4,6 +4,7 @@
 
 ```mermaid
 sequenceDiagram
+    participant javascript
     participant selain
     participant palvelin
     
@@ -28,10 +29,10 @@ sequenceDiagram
 
     Note right of selain: JS hakee JSON dataa 
     
-    selain->>palvelin: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    javascript->>palvelin: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate palvelin
-    palvelin-->>selain: JSON data
+    palvelin-->>javascript: JSON data
     deactivate palvelin   
 
-    Note right of selain: JavaScript renderöi ilman sivun uudelleenlatausta, html-tiedostoa muokataan
+    Note right of javascript: JavaScript renderöi ilman sivun uudelleenlatausta, html-tiedostoa muokataan
 ```

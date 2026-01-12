@@ -1,3 +1,6 @@
+# FSO Osa 0 - 0.5 - Single Page App
+### Kun käyttäjä menee exampleapp:in SPA osoitteeseen
+
 
 ```mermaid
 sequenceDiagram
@@ -9,7 +12,7 @@ sequenceDiagram
     palvelin-->>selain: HTML dokumentti
     deactivate palvelin
 
-    Note right of selain: Lomakkeella ei attribuutteja, koska spa.js:n koodi hoitaa lähetyksen
+    Note right of selain: Lomakkeella ei attribuutteja, spa.js:n koodi hoitaa lähetyksen, vain yksi html sivu
     
     selain->>palvelin: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     activate palvelin

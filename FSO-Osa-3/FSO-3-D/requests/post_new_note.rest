@@ -1,0 +1,8 @@
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "MongoDB 3C",
+    "number": "111-111-111"
+}
+
